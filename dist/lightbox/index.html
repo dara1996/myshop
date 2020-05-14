@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="simplelightbox.min.css">
+</head>
+<body>
+
+<div class="container">
+		<h1 class="align-center">Simple Lightbox Demo Page</h1>
+		<div class="gallery">
+			<a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a>
+			<a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a><a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a><a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a><a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a><a href="z.png">	
+			<img src="z.png" width="500" class="img">
+			</a>
+
+			
+		</div>
+		
+	</div>
+
+<script src="jquery.min.js"></script>
+
+<script src="simple-lightbox.js"></script>
+<script>
+
+	$(function(){		
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+
+</body>
+</html>

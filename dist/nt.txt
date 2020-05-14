@@ -1,0 +1,13 @@
+<!--
+	<a href="#" style="color:#005580;">ffafs</a>	
+	<a href="#" style="color:#999999;">ffafs</a>	
+	<a href="#" style="color:#808080">aaa</a>
+	<span style="color:#c09853;">afks</span>
+	<span style="color:#a47e3c">skfn</span>
+	<span style="color:#b94a48">fsfsf</span>
+	<span style="color:#953b39">fsfsf</span>
+	<span style="color:#3a87ad">fsfsf</span>
+	<span style="color:#2d6987">fsfsf</span>
+	<span style="color:#468847">fsfsf</span>
+	<span style="color:#356635">fsfsf</span>
+-->
